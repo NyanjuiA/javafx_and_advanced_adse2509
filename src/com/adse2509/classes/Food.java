@@ -19,33 +19,66 @@ public class Food
     /** The food's expiry date. */
     protected LocalDate expirationDate;
 
+ /**
+     * Constructs a {@code Food} object with default values.
+     *
+     * <p>The name is initialised to an empty string and the expiration
+     * date is initialised to the current date.</p>
+     */
     public Food()
     {
         this.name = "";
         this.expirationDate = LocalDate.now();
     }
 
+    /**
+     * Constructs a {@code Food} object with the specified name and
+     * expiration date.
+     *
+     * @param name the name of the food
+     * @param expirationDate the expiry date of the food
+     */
     public Food(String name, LocalDate expirationDate)
     {
         this.name = name;
         this.expirationDate = expirationDate;
     }
 
+    /**
+     * Returns the name of the food.
+     *
+     * @return the food's name
+     */
     public String getName()
     {
         return name;
     }
 
+    /**
+     * Sets the name of the food.
+     *
+     * @param name the new name of the food
+     */
     public void setName(String name)
     {
         this.name = name;
     }
 
+    /**
+     * Returns the expiry date of the food.
+     *
+     * @return the food's expiration date
+     */
     public LocalDate getExpirationDate()
     {
         return expirationDate;
     }
 
+    /**
+     * Sets the expiry date of the food.
+     *
+     * @param expirationDate the new expiry date of the food
+     */
     public void setExpirationDate(LocalDate expirationDate)
     {
         this.expirationDate = expirationDate;
